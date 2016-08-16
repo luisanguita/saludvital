@@ -1,0 +1,136 @@
+/*Centrar imagen header */
+.img-center {margin:0 auto;}
+
+/*Estilo barra navegacion*/
+.navbar{
+    margin-top: 1%;
+    border-color: #3695bf;
+    background-color: #3695bf;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #ffffff;  /*Sets the text hover color on navbar*/
+}
+/*Estilo dropdowns */
+.navbar-nav > li > .dropdown-menu { 
+    background-color: #A9E0FF; 
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.dropdown-menu a{
+    color: #3695bf !important;
+}
+
+/* footer */
+
+.svfooter{
+    background-color: #3695bf;
+    margin-top: 1.2%;
+}
+
+/* fonts */
+.fontmenu{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+.fontnews{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.56px;
+    text-align: center;
+}
+
+.fontfootertitle{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19.9px;
+}
+
+.fontfooterbody{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.3px;
+}
+
+.fontfthourstitle{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20.59px;
+}
+
+.fontfthoursbody{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15.29px;
+}
+
+/* input */
+.inputsv{
+    border-radius: 0px;
+}
+
+/* placeholder */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #3695BF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.3px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #3695BF;
+   opacity:  1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.3px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #3695BF;
+   opacity:  1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.3px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #3695BF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.3px;
+}
+
+/*Col align */
+.vcenter {
+    vertical-align: middle;
+    float: none;
+}
+
+ .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+/*  search */
+.inputsearch{
+    background-color: #dcf8ff;
+    border-color: #dcf8ff;
+    outline: none;
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;    
+}
