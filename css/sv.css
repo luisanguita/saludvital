@@ -132,5 +132,26 @@ color: #ffffff;  /*Sets the text hover color on navbar*/
     border: none !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;    
+    -moz-box-shadow: none !important;  
 }
+
+/*icon input */
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  padding: 10px;
+  pointer-events: none;
+    color: #3695BF;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  8%;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
