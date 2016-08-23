@@ -96,6 +96,28 @@ color: #ffffff;  /*Sets the text hover color on navbar*/
     font-size: 14.25px;
 }
 
+.fontcontenttitle{
+    color:#ffffff !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22.25px;
+    margin-left: 30px; 
+    margin-top: 6%;
+}
+
+h3{
+    color:#1d71b8 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20.25px;
+    font-weight: normal;
+    margin-left: 25px; 
+}
+h4{
+    color:#1d71b8 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.25px;
+    margin-left: 25px; 
+}
+
 /* input */
 .inputsv{
     border-radius: 0px;
@@ -292,4 +314,22 @@ color: #ffffff;  /*Sets the text hover color on navbar*/
         position: relative;
         margin-right: 0;
     }
+}
+
+.medicinatitle{
+    background-color: #3695BF;
+    height: 100px;
+    margin-left: 20px;
+    
+}
+
+.medicinacontent{
+    height: 100px;
+    margin-left: 35px;
+    
+}
+
+.contactform{
+    border-width: 2px;
+    border-color: aliceblue;
 }
