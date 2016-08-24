@@ -5,4 +5,6 @@ $( document ).ready(function(){
     $("#logolat").click(function(){
         $("#sidebar-wrapper").hide();
     });
+    
+     $("#footer").load("footer.html"); 
 });

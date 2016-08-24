@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html ng-app>
 <head>
+    <!-- JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sv.js"></script>
+    <!-- JS Files -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,429 +25,179 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
 <body>
-    <div class="container" style="width:100%">
-        <div class="row" style="margin-top:1%">
-            <div class="col-md-4">
-                        <a style="cursor:pointer"><img src="img/botonlateralmenu.png" id="menulat" class="img-responsive" alt="Responsive image" width="12%" style="float:left;margin-left:5%;margin-top:11%"></a>
-                <!-- Sidebar -->
-                <div id="sidebar-wrapper" style="display:none" >
-                    <ul class="sidebar-nav">
-                        <li> <a id="logolat" style="cursor:pointer">
-                             <img src="img/logsaludvitapieweb.png" class="img-responsive" alt="Responsive image" width="20%" style="margin-left:6%; margin-top:6%">
-                             </a>
-                        </li>
-                        <li class="fontmenulatitle" style="margin-top:5%">                          
-                                TRATAMIENTOS                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Peeling</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mesoterapia Facial</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mesoterapia Corporal</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Dermoabrasión</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rellenos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Botox</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Plasma Rico en Plaquetas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Hilos Tensores</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rejuvenecimiento Facial</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Manejo Acné Alopecia Rosácea</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Adiposidad Localizada</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Celulitis - Lipodistrofia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipolíticos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Aparatología</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Ondas Rusas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Ultrasonido</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Radiofrecuencia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Carboxiterapia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Hidrolipoclasia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Quirúrgicos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipolifting</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Elevación Punta Nariz</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Blefaroplastía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mela - Miniliposucción</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Correción de Cicatrices</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Enfermería</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Pabellón</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Liposucción</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipoescultura</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipotransferencia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mamoplastía de Aumento</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipectomía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Minilipectomía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Híperhidrosis</a>
-                        </li>
-                         <li class="fontmenulatitle" style="margin-top:4%">                          
-                                MEDICINA GENERAL                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Consulta Médica</a>
-                        </li>
-                         <li>
-                            <a href="#" class="fontmenulat">Pediátrica</a>
-                        </li>
-                         <li class="fontmenulatitle" style="margin-top:4%">                          
-                                DENTAL                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Ortodoncia</a>
-                        </li>
-                         <li>
-                            <a href="#" class="fontmenulat">Limpieza dental</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Blanqueamiento</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Carillas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Cirugía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rehabilitación</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Diseño de sonrisas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Urgencia dental</a>
-                        </li>
-                    </ul>
+    
+    <!--HEADER-->
+    <div ng-include="'header.htm'"></div>  
+    <!--HEADER-->
+    
+    <!--NAVBAR-->
+    <div ng-include="'navbar.htm'"></div>  
+    <!--NAVBAR-->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="row medicinatitle" >
+                    <p class="fontcontenttitle">TRATAMIENTOS ESTÉTICOS</p>
                 </div>
-                <!-- /#sidebar-wrapper -->
+                <div class="row medicinacontent" style="margin-top:20px">
+                    <h3>Peeling</h3>
+                    <h4>Tratamiento que borra y disminuye marcas del rostro producto del acné o cicatrices mediante la apliación de diversas técnicas que harán refinar la piel mejorando además su coloración y 
+                        luminosidad</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Mesoterapia Facial</h3>
+                    <h4>Tratamiento facial antiaging que retrasa el envejecimiento y mejora la luminosidad, además de la calidad de la piel mendiante la inserción de cócteles vitáminicos que te darán el rejuvenecimiento
+                        que deseas</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Mesoterapia Corporal</h3>
+                    <h4>Tratamiento estético de aplicación intradérmica indolora de diversas vitaminas que mejoran pieles con problemas de celulitis, flacidez, estrías y varices</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Dermoabrasión</h3>
+                    <h4>Procedimiento estético que regenera de manera homogenea las capas externas de la piel 
+                        mediante la aplicación de una pequeña y suave punta de diamantes que remueve células 
+                        muertas, reapareciendo piel nueva y sana</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Rellenos</h3>
+                    <h4>Los rellenos con ácido hialurónico mejoran zonas del rostro, dándole armonía y 
+                        disminuyendo arrugas suaves, lo que le da a nuestros pacientes un aspecto joven y renovado</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Bótox</h3>
+                    <h4>La toxina botulínica mejora la apariencia del rostro mediante su aplicación en el entrecejo, “patas de gallo” y frente, dándole al rostro un aspecto joven nuevamente</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Plasma Rico en Plaquetas</h3>
+                    <h4>Es el tratamiento antiaging líder en el mercado por su efectividad y excelentes resultados. A los pacientes se les extrae una pequeña muestra de sangre, la cual al pasar por un proceso de 
+                        centrifugado, se extrae el plasma insertándose en zonas del rostro y cuerpo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Hilos Tensores</h3>
+                    <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
+                        altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Rejuvenecimiento Facial</h3>
+                    <h4>Tratamiento estético que utiliza diversas técnicas entre ellas luz pulsada, peeling, dermoabrasión y la aplicación de distintos productos que mejoran la calidad y luminosidad del rostro</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Manejo de Acné, Alopecia y Rosácea</h3>
+                    <h4>Tratamiento que controla enfermedades de la piel como el acné y la rosácea que mediante 
+                        distintas técnicas eliminan la infección, y la alopecia que evita la caída del pelo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Adiposidad Localizada</h3>
+                    <h4>Tratamiento que elimina la grasa localizada mediante la aplicación de diversas técnicas como la criolipólisis, el ultrasonido, entre otros</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Celulitis - Lipodistrofia</h3>
+                    <h4>El tratamiento para la Lipodistrofia es una patología que hace que ciertas zonas del cuerpo presenten pérdidas de grasa y cambios en el metábolismo. Nuestro tramiento para la celulitis mezcla diversas técnicas que mejoran la calidad de piel según la cantidad de sesiones programadas</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Lipolíticos</h3>
+                    <h4>Tratamiento que reduce los depósitos de lípidos localizados en los adipocitos, tratándose de manera ambulatoria sin necesidad de post operatorio y con resultados permanentes</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Ondas Rusas</h3>
+                    <h4>Mediante la estimulación con equipos de electroestimulación mejora la firmeza y tonicidad de la piel con flaccidez, dándole firmeza y desarrollo al músculo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Ultrasonido</h3>
+                    <h4>El tratamiento de ultrasonido es la electroestimulación en zonas de la piel, mejorando problemas de acné, várices y celulitis entre otros</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Radiofrecuencia</h3>
+                    <h4>Tratamiento estético que a partir de la aplicación de radiaciones electromagnéticas mejoran problemas de celulitis y flacidez, actuando sobre el tejido adiposo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Carboxiterapia</h3>
+                    <h4>Tratamiento estético en el cual se insertan pequeñas dosis de dióxido de carbono mejorando sustancialmente la calidad de la piel, y disminuyendo arrugas y cicatrices del cuerpo </h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Hidrolipoclasia</h3>
+                    <h4>Procedimientos estético que permite disminuir medidas corporales a través de la eliminación de células grasas mediante la aplicación de una solución fisiológica estéril en áreas de adiposidad localizada, para posteriormente aplicar cavitación</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Lipolifting</h3>
+                    <h4>Procedimiento estético que mejora la calidad de la piel, dándole una apariencia joven y sana mediante la estiramiento y aplicación de pequeñas dosis de grasa, dándole un aspecto natural a tu piel</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Elevación Punta de Nariz</h3>
+                    <h4>Procedimiento estético que mejora el perfil de la nariz ya sea a través de una intervención 
+                        quirúrgica o de manera ambulatoria aplicando ácido hialurónico el cual mejora el perfil por 
+                        tiempos que van desde los 8 meses hasta los 4 años </h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Blefaroplastía</h3>
+                    <h4>Procedimiento quirúrgico que permite levantar los párpados caídos mediante la remodelación de los tejidos perioculares. Esta cirugía tiene tanto fines estéticos como funcionales, ya que en 
+                        algunos casos se reduce el campo visual</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Mela - Miniliposucción</h3>
+                    <h4>Procedimiento estético ambulatorio para extraer grasa localizada en diversas zonas del cuerpo, sin necesidad de pasar por post operatorio y continuar con la vida normal al día siguiente de realizado</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Correción de Cicatrices</h3>
+                    <h4>Mejoramos estéticamente la calidad de las cicatrices, eliminando los queloides que se forman en un descuidado proceso de cicatrización, además de retirar nódulos, quistes y cuerpos extraños</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Nódulos y Quistes Cuerpos</h3>
+                    <h4>Procedimiento de cirugía menor en el que se extraen quistes o nódulos benignos de manera 
+                        ambulatoria, eliminando para siempre esos bultos del cuerpo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Procedimientos Enfermería</h3>
+                    <h4>En Salud Vital nuestro equipo de enfermeras está altamente capacitada para realizar 
+                        procedimientos de curación, llevar tratamientos para la úlcera, cambios de sondas vesicales, entre otras, cuidando siempre en ofrecer la mejor atención</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Liposucción</h3>
+                    <h4>Procedimiento quirúrgico que extrae grasa en diversas zonas del cuerpo, obteniéndose 
+                        resultados permanentes bajo cierto régimen de estilo de vida. Es uno los procedimientos más demandados entre mujeres que necesitan estilizar su figura</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Lipoescultura</h3>
+                    <h4>Procedimiento quirúrgico que modela la figura del paciente mediante diversas técnicas 
+                        operatorias. La lipoescultura se realiza con anestesia general en el paciente</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Lipotransferencia</h3>
+                    <h4>Procedimiento estético que permite la extracción de grasa localizada, y transferencia de esta misma a otras zonas del cuerpo como relleno mejorando considerablemente la silueta del cuerpo</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Mamoplastía de Aumento</h3>
+                    <h4>Procedimiento quirúrgico mendiante el cual se inserta implante mamario haciendo crecer el busto y obteniendo resultados armoniosos en la figura femenina</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Lipectomía</h3>
+                    <h4>Lipectomía, o abdominoplastía es un procedimiento quirúrgico en la zona abdominal que 
+                        consiste en la extracción de exceso de piel, dejándo una barriga plana y firme.  </h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Minilipectomía</h3>
+                    <h4>Procedimiento para extraer pequeños cúmulos de piel  en que no es necesario realizar un 
+                        procedimiento quirúrgico mayor, y que no pueden retirarse con métodos alternativos</h4>
+                </div>
+                <div class="row medicinacontent" >
+                    <h3>Hiperhidrosis</h3>
+                    <h4>Procedimiento quirúrgico indicada para personas que sufren exceso de sudoración en manos, axila o diversas zonas del cuerpo. Una vez realizada la intervención, se pide reposo por 2 días y ya al tercero puede reiniciar su vida normal</h4>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="img/logosaludvital.png" class="img-responsive img-center" alt="Responsive image" width="33%">
-            </div>
-            <div class="col-md-4 text-right" >
-                 <form class="navbar-form" role="search">
-                    <div class="inner-addon left-addon" style="margin-top:17%">
-                        <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" class="form-control inputsearch" name="srch-term" id="srch-term">
-                    </div>
-                </form>
+            <div class="col-sm-4 contactform">
+                <div class="row">
+                    <form class="navbar-form" role="search">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     
-<nav class="navbar navbar-default navbar-top nabvarradio">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-         <ul class="nav navbar-nav">
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRATAMIENTOS</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Medicina General</a></li>
-                  <li role="separator" class="divider"></li>
-                <li><a href="#">Estéticos</a></li>
-                  <li role="separator" class="divider"></li>
-                <li><a href="#">Dentales</a></li>
-              </ul>
-            </li>
-            <li class="lr-navbar-title"><a href="#">BLOG</a></li>
-            <li class="lr-navbar-title"><a href="#">SALUD VITAL</a></li>
-            <li class="lr-navbar-title"><a href="#">RESERVA HORAS</a></li>
-          </ul>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-7">
-            <div class="row medicinatitle" >
-                <p class="fontcontenttitle">TRATAMIENTOS ESTÉTICOS</p>
-            </div>
-            <div class="row medicinacontent" style="margin-top:20px">
-                <h3>Peeling</h3>
-                <h4>Contamos con un equipo de médicos dispuesto a ayudar y dedicarte el tiempo necesario para <br> resolver todas tus dudas</p>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Mesoterapia Facial</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Mesoterapia Corporal</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Dermoabrasión</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Rellenos</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Bótox</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Plasma Rico en Plaquetas</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Hilos Tensores</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Rejuvenecimiento Facial</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Manejo de Acné, Alopecia y Rosácea</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Adiposidad Localizada</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Celulitis - Lipodistrofia</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Lipolíticos</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Ondas Rusas</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Ultrasonido</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Radiofrecuencia</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Carboxiterapia</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Hidrolipoclasia</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Lipolifting</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Elevación Punta de Nariz</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Mela - Miniliposucción</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Correción de Cicatrices</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Nódulos y Quistes Cuerpos</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Procedimientos Enfermería</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Liposucción</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Lipoescultura</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Lipotransferencia</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Mamoplastía de Aumento</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Lipectomía</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Minilipectomía</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-            <div class="row medicinacontent" >
-                <h3>Hiperhidrosis</h3>
-                <h4>Sabemos lo importante que es la salud de ellos, es por esto que contamos con profesionales <br>
-                    altamente calificados,tomándose el tiempo de explicarte las mejores indicaiones para su salud</h4>
-            </div>
-        </div>
-        <div class="col-sm-4 contactform">
-            <div class="row">
-                <form class="navbar-form" role="search">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer svfooter">
-      <div class="row" style="width:100%;">
-            <div class="col-md-4" style="margin-top:1%">
-                <div class="row" style="margin-left:4%">
-                    <img src="img/logsaludvitapieweb.png" class="img-responsive" alt="Responsive image" width="25%">
-                </div>
-                <div class="row" style="margin-left:4%; margin-top:2%">
-                    <p class="fontfootertitle">Centro de Salud Salud Vital</p>
-                    <p class="fontfooterbody">Tocornal 67, Puente Alto. Santiago <br>
-                    +56 2 32710972 <br>
-                    consultas@saludvital.cl</p>
-                </div>
-                <div class="row" style="margin-bottom:3%">
-                     <div class="col-xs-1 col-md-2" style="margin-left:4%" >
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/logfacebook.png" width="40%" /></a>
-                     </div>
-                     <div class="col-xs-1 col-md-2" style="margin-left:-10%">
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/logtwitter.png" width="55%" /></a>
-                     </div>
-                     <div class="col-xs-1 col-md-2" style="margin-left:-8%">
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/loginstagram.png" width="40%" /></a>
-                     </div>
-                </div>
-            </div>
-            <div class="col-md-5" style="margin-top:7.5%;">
-                <form action="" method="post">
-                    <div class="col-md-8 col-md-offset-1">
-                        <p class="fontnews">Suscripción Newsletter</p>
-                        <input type="email" class="form-control inputsv" id="" name="" placeholder="correo electrónico">
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-3"  style="margin-top:1%">
-              <div class="row">
-                    <p class="fontfthourstitle text-right">Horario de Atención</p>
-                    <p class="fontfthoursbody text-right">Lunes a Jueves de 10:00 a 14:00 hrs.<br>
-                    15:00 a 19:30 hrs.</p>
-                    <p class="fontfthoursbody text-right">Viernes de 10:00 a 14:00 hrs.<br>
-                    15:00 a 18:00 hrs.</p>
-                    <p class="fontfthoursbody text-right">Sábado de 10:00 a 14:00 hrs.</p>
-                    <p class="fontfthoursbody text-right">Urgencias Dentales de 10:00 a 21:00 hrs.</p>
-              </div>
-            </div>
-        </div>
-</footer>
-
-    <!-- JS Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/sv.js"></script>
+    <!--FOOOOOOOOOTER-->
+    <div ng-include="'footer.htm'"></div>  
+    <!--FOOOOOOOOOTER-->
     
 </body>
 </html>

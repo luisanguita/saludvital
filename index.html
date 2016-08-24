@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html ng-app>
 <head>
+    <!-- JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sv.js"></script>
+    <!-- JS Files -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,302 +25,61 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
 <body>
-    <div class="container" style="width:100%">
-        <div class="row" style="margin-top:1%">
-            <div class="col-md-4">
-                        <a style="cursor:pointer"><img src="img/botonlateralmenu.png" id="menulat" class="img-responsive" alt="Responsive image" width="12%" style="float:left;margin-left:5%;margin-top:11%"></a>
-                <!-- Sidebar -->
-                <div id="sidebar-wrapper" style="display:none" >
-                    <ul class="sidebar-nav">
-                        <li> <a id="logolat" style="cursor:pointer">
-                             <img src="img/logsaludvitapieweb.png" class="img-responsive" alt="Responsive image" width="20%" style="margin-left:6%; margin-top:6%">
-                             </a>
-                        </li>
-                        <li class="fontmenulatitle" style="margin-top:5%">                          
-                                TRATAMIENTOS                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Peeling</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mesoterapia Facial</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mesoterapia Corporal</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Dermoabrasión</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rellenos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Botox</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Plasma Rico en Plaquetas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Hilos Tensores</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rejuvenecimiento Facial</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Manejo Acné Alopecia Rosácea</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Adiposidad Localizada</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Celulitis - Lipodistrofia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipolíticos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Aparatología</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Ondas Rusas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Ultrasonido</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Radiofrecuencia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Carboxiterapia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Hidrolipoclasia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Quirúrgicos</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipolifting</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Elevación Punta Nariz</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Blefaroplastía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mela - Miniliposucción</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Correción de Cicatrices</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Enfermería</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Procedimientos Pabellón</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Liposucción</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipoescultura</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipotransferencia</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Mamoplastía de Aumento</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Lipectomía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Minilipectomía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Híperhidrosis</a>
-                        </li>
-                         <li class="fontmenulatitle" style="margin-top:4%">                          
-                                MEDICINA GENERAL                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Consulta Médica</a>
-                        </li>
-                         <li>
-                            <a href="#" class="fontmenulat">Pediátrica</a>
-                        </li>
-                         <li class="fontmenulatitle" style="margin-top:4%">                          
-                                DENTAL                       
-                        </li>
-                        <li style="margin-top:2%">
-                            <a href="#" class="fontmenulat">Ortodoncia</a>
-                        </li>
-                         <li>
-                            <a href="#" class="fontmenulat">Limpieza dental</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Blanqueamiento</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Carillas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Cirugía</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Rehabilitación</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Diseño de sonrisas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="fontmenulat">Urgencia dental</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /#sidebar-wrapper -->
-            </div>
-            <div class="col-md-4">
-                <img src="img/logosaludvital.png" class="img-responsive img-center" alt="Responsive image" width="32%">
-            </div>
-            <div class="col-md-4 text-right" >
-                 <form class="navbar-form" role="search">
-                    <div class="inner-addon left-addon" style="margin-top:17%">
-                        <i class="glyphicon glyphicon-search"></i>
-                        <input type="text" class="form-control inputsearch" name="srch-term" id="srch-term">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     
-<nav class="navbar navbar-default navbar-top nabvarradio">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+    <!--HEADER-->
+    <div ng-include="'header.htm'"></div>  
+    <!--HEADER-->
+    
+    <!--NAVBAR-->
+    <div ng-include="'navbar.htm'"></div>  
+    <!--NAVBAR-->
+    
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-         <ul class="nav navbar-nav">
-             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRATAMIENTOS</a>
-              <ul class="dropdown-menu">
-                <li><a href="medicinageneral.html">Medicina General</a></li>
-                  <li role="separator" class="divider"></li>
-                <li><a href="#">Estéticos</a></li>
-                  <li role="separator" class="divider"></li>
-                <li><a href="#">Dentales</a></li>
-              </ul>
-            </li>
-            <li class="lr-navbar-title"><a href="#">BLOG</a></li>
-            <li class="lr-navbar-title"><a href="#">SALUD VITAL</a></li>
-            <li class="lr-navbar-title"><a href="#">RESERVA HORAS</a></li>
-          </ul>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- Full Page Image Background Carousel Header -->
-<header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-            <div class="carousel-caption">
-                <h2>Promoción 1</h2>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-            <div class="carousel-caption">
-                <h2>Promoción 2</h2>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-            <div class="carousel-caption">
-                <h2>Promoción 3</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</header>
-<footer class="footer svfooter">
-      <div class="row" style="width:100%;">
-            <div class="col-md-4" style="margin-top:1%">
-                <div class="row" style="margin-left:4%">
-                    <img src="img/logsaludvitapieweb.png" class="img-responsive" alt="Responsive image" width="25%">
-                </div>
-                <div class="row" style="margin-left:4%; margin-top:2%">
-                    <p class="fontfootertitle">Centro de Salud Salud Vital</p>
-                    <p class="fontfooterbody">Tocornal 67, Puente Alto. Santiago <br>
-                    +56 2 32710972 <br>
-                    consultas@saludvital.cl</p>
-                </div>
-                <div class="row" style="margin-bottom:3%">
-                     <div class="col-xs-1 col-md-2" style="margin-left:4%" >
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/logfacebook.png" width="40%" /></a>
-                     </div>
-                     <div class="col-xs-1 col-md-2" style="margin-left:-10%">
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/logtwitter.png" width="55%" /></a>
-                     </div>
-                     <div class="col-xs-1 col-md-2" style="margin-left:-8%">
-                         <a style="cursor:pointer"><img class="img-responsive" src="/img/loginstagram.png" width="40%" /></a>
-                     </div>
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Promoción 1</h2>
                 </div>
             </div>
-            <div class="col-md-5" style="margin-top:7.5%;">
-                <form action="" method="post">
-                    <div class="col-md-8 col-md-offset-1">
-                        <p class="fontnews">Suscripción Newsletter</p>
-                        <input type="email" class="form-control inputsv" id="" name="" placeholder="correo electrónico">
-                    </div>
-                </form>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Promoción 2</h2>
+                </div>
             </div>
-            <div class="col-md-3"  style="margin-top:1%">
-              <div class="row">
-                    <p class="fontfthourstitle text-right">Horario de Atención</p>
-                    <p class="fontfthoursbody text-right">Lunes a Jueves de 10:00 a 14:00 hrs.<br>
-                    15:00 a 19:30 hrs.</p>
-                    <p class="fontfthoursbody text-right">Viernes de 10:00 a 14:00 hrs.<br>
-                    15:00 a 18:00 hrs.</p>
-                    <p class="fontfthoursbody text-right">Sábado de 10:00 a 14:00 hrs.</p>
-                    <p class="fontfthoursbody text-right">Urgencias Dentales de 10:00 a 21:00 hrs.</p>
-              </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Promoción 3</h2>
+                </div>
             </div>
         </div>
-</footer>
 
-    <!-- JS Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/sv.js"></script>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+    <!--FOOOOOOOOOTER-->
+    <div ng-include="'footer.htm'"></div>  
+    <!--FOOOOOOOOOTER-->
+    
     
 </body>
 </html>
